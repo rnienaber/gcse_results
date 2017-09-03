@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #map {
+            height: 600px;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+<h3>GCSE Results</h3>
+
+<div width="100%">
+    <div id="map" style="float:left; padding:10px "></div>
+    <div id="activeSchool" style="float:left; padding: 10px">
+        <table>
+            <tr>
+                <td>Area:</td>
+                <td id="school_area"></td>
+            </tr>
+            <tr>
+                <td>School name:</td>
+                <td id="school_name"></td>
+            </tr>
+            <tr>
+                <td>Attainment:</td>
+                <td id="school_attainment"></td>
+            </tr>
+            <tr>
+                <td>Progress 8:</td>
+                <td id="school_progress_8"></td>
+            </tr>
+            <tr>
+                <td>At Least a C:</td>
+                <td id="school_at_least_a_c"></td>
+            </tr>
+            <tr>
+                <td>Ebacc:</td>
+                <td id="school_ebacc"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td id="school_address"></td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="script.js"></script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK7nxrgyHkIU0OcolKoM8mDOlFJzdAzYU&callback=initMap">
+</script>
+
+</body>
+</html>
